@@ -1,0 +1,16 @@
+{
+  "name": "angular.training.session",
+  "version": "1.0.0",
+  "description": "Angular Training Session",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "console.log('Server is Running')",
+    "start": "node server.js"
+  },
+  "author": "baljinder.singh",
+  "license": "ISC"
+}

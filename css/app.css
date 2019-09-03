@@ -1,0 +1,21 @@
+.red{
+	color:red;
+}
+
+.green{
+	color:green;
+}
+
+.black{
+	color:black;
+}
+
+.borderGreen{
+	border: 2px solid green;
+  border-radius: 4px;
+}
+
+.borderRed{
+	border: 2px solid red;
+  border-radius: 4px;
+}
