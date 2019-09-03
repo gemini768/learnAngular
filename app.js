@@ -20,14 +20,14 @@
 					  return (element != null && element!='') ;
 				});
 			if(filtered.length==0){
-					$scope.message='Please enter data first';
-					$scope.inputClass="borderRed";
-						$scope.messageClass="red";
-					return;
+				$scope.message='Please enter data first';
+				$scope.inputClass="borderRed";
+				$scope.messageClass="red";
+				return;
 			}else if(filtered.length>3){
-					$scope.message='Too much!';
+				$scope.message='Too much!';
 			}else if(filtered.length>0 && filtered.length<=3){
-					$scope.message='Enjoy!';
+				$scope.message='Enjoy!';
 			}
 			$scope.inputClass="borderGreen";
 			$scope.messageClass="green";	
