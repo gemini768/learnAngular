@@ -8,7 +8,7 @@
 
 	function toUpperFilter(){
 		return function(msg){
-			return "ho";
+			$scope.message="bye";
 		}
 	}
 
