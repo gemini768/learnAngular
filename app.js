@@ -8,7 +8,7 @@
 
 	function toUpperFilter(){
 		return function(msg){
-			$scope.message="bye";
+			return msg.toUpperCase();
 		}
 	}
 
