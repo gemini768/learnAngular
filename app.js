@@ -1,9 +1,16 @@
 (function(){
 	'use strict';
 	angular.module('LunchCheck',[])
-	.controller('LunchCheckController',LunchCheckController);
+	.controller('LunchCheckController',LunchCheckController)
+	.filter('toUpper',toUpperFilter);
 
 	LunchCheckController.$inject=['$scope'];
+
+	function toUpperFilter(){
+		return function(msg){
+			return msg.toUpperCase();
+		}
+	}
 
 	function LunchCheckController($scope){
 		$scope.message="";
