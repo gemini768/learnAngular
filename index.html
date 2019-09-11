@@ -1,33 +1,14 @@
-<html>
+<html >
 <head>
 	<title>Learning Angular JS</title>
 	 <script type="text/javascript" src="scripts/vendor/angular.min.js"></script>
-	 <script type="text/javascript" src="app.js"></script>
+	 <script type="text/javascript" src="module.js"></script>
+	<script type="text/javascript" src="scripts/appController.js"></script>
 	 <link rel="stylesheet" type="text/css" href="css/app.css"/>
 </head>
-<body ng-app="LunchCheck">
-
-	   
-   <div class="container" align="center" ng-controller="LunchCheckController">
-      <h1>Lunch Checker</h1>
- 
-         <div class="form-group" >
-         	<span>
-         		<input  class="{{inputClass}}" ng-keyup="setClass()" type="text" ng-model="lunchItems"
-             placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control">
-         	</span>
-             <span>Empty items i.e., , ,  would not be counted</span>
-         </div>
-         <br>
-         <div class="form-group">
-             <button  ng-click="btnClick()">Check If Too Much</button>
-         </div>
-         <br>
-         <div class="{{messageClass}}">
-           {{message | toUpper}} 
-         </div>
-         (Using custom angular filter[toUpper])
+<body ng-app="myApp">
+	<div class="container" align="center" ng-controller="appController">
+    	hi
    </div>
 
 </body>
