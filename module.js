@@ -1,3 +1,10 @@
 (function(){
-	app=angular.module('myApp',[]);
+	angular.module('myApp',[]).filter('upper',upperFilterFactory);
+
+	function upperFilterFactory(){
+  		return function(msg){
+  			return msg.toUpperCase();
+  		}
+  	};
+
 })();
