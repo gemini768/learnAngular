@@ -6,9 +6,15 @@
 	<script type="text/javascript" src="scripts/appController.js"></script>
 	 <link rel="stylesheet" type="text/css" href="css/app.css"/>
 </head>
+
 <body ng-app="myApp">
+	<br>
+	<br>
 	<div class="container" align="center" ng-controller="appController">
-    	hi
+    	<h2> {{ headerMessage | upper }}
+    	 <p style="font-size: 12px ">(UpperCase custom filter)</p>
+    	</h2>
+    	<input placeholder="{{placeholder}}" style="text-align:center" ng-model="inputValue" ng-keyup="headerChanged()" type="text"/>
    </div>
 
 </body>
